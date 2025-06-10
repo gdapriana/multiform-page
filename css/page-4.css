@@ -1,0 +1,119 @@
+.page-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: start;
+  align-items: stretch;
+}
+.page-4 .breadcum {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+}
+.page-4 .breadcum .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 999em;
+  font-size: 0.8rem;
+  width: 40px;
+  aspect-ratio: 1/1;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+}
+.page-4 .breadcum .number:first-child, .page-4 .breadcum .number:nth-child(3), .page-4 .breadcum .number:nth-child(5), .page-4 .breadcum .number:nth-child(7) {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.page-4 .breadcum .line {
+  height: 2px;
+  width: 15px;
+}
+@media (min-width: 768px) {
+  .page-4 .breadcum .line {
+    width: 40px;
+  }
+}
+.page-4 .breadcum .line:nth-child(2), .page-4 .breadcum .line:nth-child(4), .page-4 .breadcum .line:nth-child(6) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.page-4 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.page-4 .content .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  flex-direction: column;
+}
+.page-4 .content .header .title {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.page-4 .content .hasil-wrapper {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 0.4rem;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+}
+.page-4 .content .hasil-wrapper hr {
+  border: 0.8px solid rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+.page-4 .content .hasil-wrapper p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-4 .content .hasil-wrapper p span {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 0.9rem;
+}
+.page-4 .content .cta {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: "Sora", sans-serif;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 6px;
+}
+.page-4 .content .cta:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.page-4 .content .text-end {
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+label[for=jumlah-donasi] {
+  display: none;
+}
+
+label[for=jumlah-donasi].show {
+  display: block;
+}
+
+.validation-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+/*# sourceMappingURL=page-4.css.map */

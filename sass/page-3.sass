@@ -1,0 +1,122 @@
+@use "variables" as v
+
+.page-3
+  display: flex
+  flex-direction: column
+  gap: 1.6rem
+  justify-content: start
+  align-items: stretch
+
+  .breadcum
+    display: flex
+    gap: .6rem
+    justify-content: center
+    align-items: center
+
+    .number
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 10px
+      border-radius: 999em
+      font-size: .8rem
+      width: 40px
+      aspect-ratio: 1/1
+      border: 2px solid rgba(0, 0, 0, 0.8)
+      &:first-child, &:nth-child(3), &:nth-child(5)
+        background-color: rgba(0, 0, 0, 0.8)
+        color: white
+
+
+    .line
+      height: 2px
+      width: 15px
+      @media (min-width: 768px)
+        width: 40px
+      &:nth-child(2), &:nth-child(4)
+        background-color: rgba(0, 0, 0, 0.8)
+
+
+  .content
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    border-radius: 10px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+
+    .header
+      display: flex
+      justify-content: center
+      align-items: center
+      gap: .6rem
+      flex-direction: column
+      .title
+        font-size: 1.2rem
+        color: rgba(0, 0, 0, 0.8)
+
+    .metode-pembayaran-wrapper
+      display: flex
+      flex-direction: column
+      justify-content: start
+      align-items: stretch
+      gap: .3rem
+
+      .metode-pembayaran
+        display: flex
+        justify-content: start
+        align-items: center
+        gap: .6rem
+        border-radius: 8px
+        font-family: "Sora", sans-serif
+        .title-desc
+          border: 1px solid rgba(0, 0, 0, 0.1)
+          padding: 1rem
+          border-radius: 8px
+          font-size: .8rem
+          flex: 1
+          display: flex
+          flex-direction: column
+          justify-content: start
+          align-items: start
+          gap: .3rem
+
+          .title
+            font-size: .8rem
+
+          .desc
+            font-size: .7rem
+
+  .action
+    display: flex
+    justify-content: space-between
+
+    button
+      padding: .4rem 1.2rem
+      border-radius: 6px
+      border: 1px solid rgba(0, 0, 0, 0.2)
+      background-color: transparent
+      cursor: pointer
+      font-family: "Sora", sans-serif
+
+
+      &:first-child
+        color: rgba(0, 0, 0, 0.8)
+
+      &:last-child
+        background-color: rgba(0, 0, 0, 0.8)
+        color: white
+        &:disabled
+          background-color: rgba(0, 0, 0, 0.7)
+          cursor: not-allowed
+
+label[for="jumlah-donasi"]
+  display: none
+
+label[for="jumlah-donasi"].show
+  display: block
+
+.validation-message
+  color: #dc3545
+  font-size: 12px
+  margin-top: 5px
+  display: none

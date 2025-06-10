@@ -1,0 +1,11 @@
+{
+  "name": "donation-program",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {}
+}
