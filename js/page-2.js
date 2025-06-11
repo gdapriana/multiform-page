@@ -64,6 +64,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   validateFormPage2();
 
+
+  const hasilProgramPage1 = document.querySelectorAll('input[name="program"]');
+
+  hasilProgramPage1.forEach((radio) => {
+    radio.addEventListener('change', () => {
+      const selected = document.querySelector('input[name="program"]:checked');
+      if (selected) {
+        document.querySelector('#program-page-1').innerText = selected.value;
+      }
+    });
+  });
+
+
+  document.querySelector('#jumlah-donasi').addEventListener('input', (evt) => {
+    document.querySelector('#jumlah-donasi-page-1').innerText = document.querySelector('#jumlah-donasi').value;
+  })
+
   btnNextPage2.addEventListener('click', () => {
     page1.style.display = 'none';
     page2.style.display = 'none';

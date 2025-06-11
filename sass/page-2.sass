@@ -59,6 +59,36 @@
         font-size: .8rem
         color: rgba(0, 0, 0, 0.6)
 
+    .data-page-1
+      display: flex
+      gap: 1rem
+      flex-direction: column
+      @media (min-width: 768px)
+        justify-content: space-between
+        flex-direction: row
+
+
+      & > div
+        display: flex
+        flex-direction: column
+        gap: .4rem
+        border: 1px solid rgba(0, 0, 0, 0.2)
+        flex: 1
+        padding: .6rem
+        border-radius: 8px
+
+      & > div .title
+        font-size: .8rem
+        font-weight: 600
+
+      & > div p
+        font-size: .7rem
+        color: rgba(0, 0, 0, 0.8)
+
+    .line
+      margin: 1rem 0
+      border: .5px solid rgba(0, 0, 0, 0.1)
+
     label
       display: flex
       flex-direction: column

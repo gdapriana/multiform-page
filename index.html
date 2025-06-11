@@ -1,244 +1,251 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Donation Form</title>
 
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Donation Form</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/format.css">
-    <link rel="stylesheet" href="./css/page-1.css">
-    <link rel="stylesheet" href="./css/page-2.css">
-    <link rel="stylesheet" href="./css/page-3.css">
-    <link rel="stylesheet" href="./css/page-4.css">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
 
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/format.css" />
+  <link rel="stylesheet" href="./css/page-1.css" />
+  <link rel="stylesheet" href="./css/page-2.css" />
+  <link rel="stylesheet" href="./css/page-3.css" />
+  <link rel="stylesheet" href="./css/page-4.css" />
 
-  <body>
-    <form id="form">
-      <div class="page page-1">
-        <div class="breadcum">
-          <span class="number">1</span>
-          <div class="line"></div>
-          <span class="number">2</span>
-          <div class="line"></div>
-          <span class="number">3</span>
-          <div class="line"></div>
-          <span class="number">4</span>
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <form id="form">
+    <div class="page page-1">
+      <div class="breadcum">
+        <span class="number">1</span>
+        <div class="line"></div>
+        <span class="number">2</span>
+        <div class="line"></div>
+        <span class="number">3</span>
+        <div class="line"></div>
+        <span class="number">4</span>
+      </div>
+      <div class="content">
+        <header class="header">
+          <h2 class="title">Pilih Program Donasi</h2>
+          <p class="desc">Pilih program yang ingin Anda dukung</p>
+        </header>
+        <main class="programs">
+          <label class="program">
+            <input class="radio-input-program" type="radio" name="program" value="Pendidikan Anak" />
+            <header class="program-header">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div class="title-target">
+                <strong>Pendidikan Anak</strong>
+                <span>Target: Rp 50.000.000</span>
+              </div>
+            </header>
+            <p class="desc">Bantu anak-anak mendapatkan akses pendidikan yang layak</p>
+          </label>
+          <label class="program">
+            <input class="radio-input-program" type="radio" name="program" value="Kesehatan Masyarakat" />
+            <header class="program-header">
+              <i class="fa-solid fa-stethoscope"></i>
+              <div class="title-target">
+                <strong>Kesehatan Masyarakat</strong>
+                <span>Target: Rp 75.000.000</span>
+              </div>
+            </header>
+            <p class="desc">Dukung program kesehatan untuk masyarakat kurang mampu</p>
+          </label>
+          <label class="program">
+            <input class="radio-input-program" type="radio" name="program" value="Rumah Layak Huni" />
+            <header class="program-header">
+              <i class="fa-solid fa-house"></i>
+              <div class="title-target">
+                <strong>Rumah Layak Huni</strong>
+                <span>Target: Rp 100.000.000</span>
+              </div>
+            </header>
+            <p class="desc">Bangun rumah layak huni untuk keluarga prasejahtera</p>
+          </label>
+          <label class="program">
+            <input class="radio-input-program" type="radio" name="program" value="Bantuan Pangan" />
+            <header class="program-header">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div class="title-target">
+                <strong>Bantuan Pangan</strong>
+                <span>Target: Rp 30.000.000</span>
+              </div>
+            </header>
+            <p class="desc">Sediakan makanan bergizi untuk anak-anak kurang gizi</p>
+          </label>
+        </main>
+        <label for="jumlah-donasi" class="jumlah-donasi-wrapper">
+          <span>Jumlah Donasi</span>
+          <input type="text" id="jumlah-donasi" name="jumlah-donasi" placeholder="Masukkan Jumlah Donasi" />
+          <div class="opsi-donasi">
+            <button type="button" id="jumlah-50">Rp. 50.000</button>
+            <button type="button" id="jumlah-100">Rp. 100.000</button>
+            <button type="button" id="jumlah-250">Rp. 250.000</button>
+            <button type="button" id="jumlah-500">Rp. 500.000</button>
+          </div>
+        </label>
+      </div>
+      <div class="action">
+        <button disabled id="btnPrevPage1" type="button">Sebelumnya</button>
+        <button id="btnNextPage1" type="button">Selanjutnya</button>
+      </div>
+    </div>
+
+    <div class="page page-2" style="display: none">
+      <div class="breadcum">
+        <span class="number">1</span>
+        <div class="line"></div>
+        <span class="number">2</span>
+        <div class="line"></div>
+        <span class="number">3</span>
+        <div class="line"></div>
+        <span class="number">4</span>
+      </div>
+      <div class="content">
+        <header class="header">
+          <h2 class="title">Data Diri</h2>
+          <p class="desc">Lengkapi data diri Anda</p>
+        </header>
+        
+        <div class="data-page-1">
+          <div class="data-program">
+            <h4 class="title">Program Terpilih</h4>
+            <p id="program-page-1"></p>
+          </div>
+          <div class="data-jumlah-donasi">
+            <h4 class="title">Jumlah Donasi</h4>
+            <p id="jumlah-donasi-page-1"></p>
+          </div>
         </div>
-        <div class="content">
-          <header class="header">
-            <h2 class="title">Pilih Program Donasi</h2>
-            <p class="desc">Pilih program yang ingin Anda dukung</p>
-          </header>
-          <main class="programs">
-            <label class="program">
-              <input class="radio-input-program" type="radio" name="program" value="Pendidikan Anak" />
-              <header class="program-header">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <div class="title-target">
-                  <strong>Pendidikan Anak</strong>
-                  <span>Target: Rp 50.000.000</span>
-                </div>
-              </header>
-              <p class="desc">
-                Bantu anak-anak mendapatkan akses pendidikan yang layak
-              </p>
-            </label>
-            <label class="program">
-              <input class="radio-input-program" type="radio" name="program" value="Kesehatan Masyarakat" />
-              <header class="program-header">
-                <i class="fa-solid fa-stethoscope"></i>
-                <div class="title-target">
-                  <strong>Kesehatan Masyarakat</strong>
-                  <span>Target: Rp 75.000.000</span>
-                </div>
-              </header>
-              <p class="desc">
-                Dukung program kesehatan untuk masyarakat kurang mampu
-              </p>
-            </label>
-            <label class="program">
-              <input class="radio-input-program" type="radio" name="program" value="Rumah Layak Huni" />
-              <header class="program-header">
-                <i class="fa-solid fa-house"></i>
-                <div class="title-target">
-                  <strong>Rumah Layak Huni</strong>
-                  <span>Target: Rp 100.000.000</span>
-                </div>
-              </header>
-              <p class="desc">
-                Bangun rumah layak huni untuk keluarga prasejahtera
-              </p>
-            </label>
-            <label class="program">
-              <input class="radio-input-program" type="radio" name="program" value="Bantuan Pangan" />
-              <header class="program-header">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <div class="title-target">
-                  <strong>Bantuan Pangan</strong>
-                  <span>Target: Rp 30.000.000</span>
-                </div>
-              </header>
-              <p class="desc">
-                Sediakan makanan bergizi untuk anak-anak kurang gizi
-              </p>
-            </label>
-          </main>
-          <label for="jumlah-donasi" class="jumlah-donasi-wrapper">
-            <span>Jumlah Donasi</span>
-            <input type="text" id="jumlah-donasi" name="jumlah-donasi" placeholder="Masukkan Jumlah Donasi">
-            <div class="opsi-donasi">
-              <button type="button" id="jumlah-50">Rp. 50.000</button>
-              <button type="button" id="jumlah-100">Rp. 100.000</button>
-              <button type="button" id="jumlah-250">Rp. 250.000</button>
-              <button type="button" id="jumlah-500">Rp. 500.000</button>
+
+        <hr class="line">
+
+        <label for="nama_lengkap">
+          <span class="input-title">Nama Lengkap *</span>
+          <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Masukkan Nama Lengkap" />
+          <span class="validation-message" id="nama_error">Nama lengkap wajib diisi</span>
+        </label>
+        <label for="email">
+          <span class="input-title">Email *</span>
+          <input type="email" id="email" name="email" placeholder="contoh@gmail.com" />
+          <span class="validation-message" id="email_error">Email wajib diisi dan harus valid</span>
+        </label>
+        <label for="no_telepon">
+          <span class="input-title">No Telpon *</span>
+          <input type="tel" id="no_telepon" name="no_telepon" placeholder="08xxxxxxxxxx" />
+          <span class="validation-message" id="telepon_error">No telepon wajib diisi</span>
+        </label>
+        <label for="pesan">
+          <span class="input-title">Pesan (Opsional)</span>
+          <textarea name="pesan" id="pesan" placeholder="Tulis pesan atau doa untuk program ini"></textarea>
+        </label>
+      </div>
+      <div class="action">
+        <button id="btnPrevPage2" type="button">Sebelumnya</button>
+        <button id="btnNextPage2" type="button">Selanjutnya</button>
+      </div>
+    </div>
+
+    <div class="page page-3" style="display: none">
+      <div class="breadcum">
+        <span class="number">1</span>
+        <div class="line"></div>
+        <span class="number">2</span>
+        <div class="line"></div>
+        <span class="number">3</span>
+        <div class="line"></div>
+        <span class="number">4</span>
+      </div>
+      <div class="content">
+        <header class="header">
+          <h2 class="title">Metode Pembayaran</h2>
+          <p class="desc">Pilih metode pembayaran yang Anda inginkan</p>
+        </header>
+
+        <div class="metode-pembayaran-wrapper">
+          <label class="metode-pembayaran">
+            <input type="radio" name="metode_pembayaran" value="Transfer Bank" />
+            <div class="title-desc">
+              <strong class="title">Transfer Bank</strong>
+              <p class="desc">BCA, Mandiri, BNI, BRI</p>
+            </div>
+          </label>
+          <label class="metode-pembayaran">
+            <input type="radio" name="metode_pembayaran" value="E-Wallet" />
+            <div class="title-desc">
+              <strong>E-Wallet</strong>
+              <p>GoPay, OVO, DANA, ShopeePay</p>
+            </div>
+          </label>
+          <label class="metode-pembayaran">
+            <input type="radio" name="metode_pembayaran" value="Kartu Kredit" />
+            <div class="title-desc">
+              <strong>Kartu Kredit</strong>
+              <p>Visa, Mastercard</p>
             </div>
           </label>
         </div>
-        <div class="action">
-          <button disabled id="btnPrevPage1" type="button">Sebelumnya</button>
-          <button id="btnNextPage1" type="button">Selanjutnya</button>
-        </div>
       </div>
-
-      <div class="page page-2" style="display: none">
-        <div class="breadcum">
-          <span class="number">1</span>
-          <div class="line"></div>
-          <span class="number">2</span>
-          <div class="line"></div>
-          <span class="number">3</span>
-          <div class="line"></div>
-          <span class="number">4</span>
-        </div>
-        <div class="content">
-          <header class="header">
-            <h2 class="title">Data Diri</h2>
-            <p class="desc">Lengkapi data diri Anda</p>
-          </header>
-          <label for="nama_lengkap">
-            <span class="input-title">Nama Lengkap *</span>
-            <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Masukkan Nama Lengkap">
-            <span class="validation-message" id="nama_error">Nama lengkap wajib diisi</span>
-          </label>
-          <label for="email">
-            <span class="input-title">Email *</span>
-            <input type="email" id="email" name="email" placeholder="contoh@gmail.com">
-            <span class="validation-message" id="email_error">Email wajib diisi dan harus valid</span>
-          </label>
-          <label for="no_telepon">
-            <span class="input-title">No Telpon *</span>
-            <input type="tel" id="no_telepon" name="no_telepon" placeholder="08xxxxxxxxxx">
-            <span class="validation-message" id="telepon_error">No telepon wajib diisi</span>
-          </label>
-          <label for="pesan">
-            <span class="input-title">Pesan (Opsional)</span>
-            <textarea name="pesan" id="pesan" placeholder="Tulis pesan atau doa untuk program ini"></textarea>
-          </label>
-        </div>
-        <div class="action">
-          <button id="btnPrevPage2" type="button">Sebelumnya</button>
-          <button id="btnNextPage2" type="button">Selanjutnya</button>
-        </div>
+      <div class="action">
+        <button id="btnPrevPage3" type="button">Sebelumnya</button>
+        <button id="btnNextPage3" type="button">Selanjutnya</button>
       </div>
+    </div>
 
-      <div class="page page-3" style="display: none">
-        <div class="breadcum">
-          <span class="number">1</span>
-          <div class="line"></div>
-          <span class="number">2</span>
-          <div class="line"></div>
-          <span class="number">3</span>
-          <div class="line"></div>
-          <span class="number">4</span>
-        </div>
-        <div class="content">
-          <header class="header">
-            <h2 class="title">Metode Pembayaran</h2>
-            <p class="desc">Pilih metode pembayaran yang Anda inginkan</p>
-          </header>
-
-          <div class="metode-pembayaran-wrapper">
-            <label class="metode-pembayaran">
-              <input type="radio" name="metode_pembayaran" value="Transfer Bank" />
-              <div class="title-desc">
-                <strong class="title">Transfer Bank</strong>
-                <p class="desc">BCA, Mandiri, BNI, BRI</p>
-              </div>
-            </label>
-            <label class="metode-pembayaran">
-              <input type="radio" name="metode_pembayaran" value="E-Wallet" />
-              <div class="title-desc">
-                <strong>E-Wallet</strong>
-                <p>GoPay, OVO, DANA, ShopeePay</p>
-              </div>
-            </label>
-            <label class="metode-pembayaran">
-              <input type="radio" name="metode_pembayaran" value="Kartu Kredit" />
-              <div class="title-desc">
-                <strong>Kartu Kredit</strong>
-                <p>Visa, Mastercard</p>
-              </div>
-            </label>
-          </div>
-        </div>
-        <div class="action">
-          <button id="btnPrevPage3" type="button">Sebelumnya</button>
-          <button id="btnNextPage3" type="button">Selanjutnya</button>
-        </div>
+    <div class="page page-4" style="display: none">
+      <div class="breadcum">
+        <span class="number">1</span>
+        <div class="line"></div>
+        <span class="number">2</span>
+        <div class="line"></div>
+        <span class="number">3</span>
+        <div class="line"></div>
+        <span class="number">4</span>
       </div>
+      <div class="content">
+        <header class="header">
+          <h2 class="title">Detail Donasi</h2>
+          <p class="desc">Periksa kembali detail donasi Anda</p>
+        </header>
 
-      <div class="page page-4" style="display: none">
-        <div class="breadcum">
-          <span class="number">1</span>
-          <div class="line"></div>
-          <span class="number">2</span>
-          <div class="line"></div>
-          <span class="number">3</span>
-          <div class="line"></div>
-          <span class="number">4</span>
+        <div class="hasil-wrapper">
+          <h4 class="title">❤️ Ringkasan Donasi</h4>
+          <p>Program: <span id="hasil-program"></span></p>
+          <p>Jumlah Donasi: <span id="hasil-jumlah-donasi"></span></p>
+          <hr />
+          <h5>Data Donatur:</h5>
+          <p>Nama Lengkap: <span id="hasil-nama-lengkap"></span></p>
+          <p>Email: <span id="hasil-email"></span></p>
+          <p>No Telepon: <span id="hasil-no-telepon"></span></p>
+          <p>Pesan: <span id="hasil-pesan"></span></p>
+          <hr />
+          <p>Metode Pembayaran: <span id="hasil-metode-pembayaran"></span></p>
         </div>
-        <div class="content">
-          <header class="header">
-            <h2 class="title">Detail Donasi</h2>
-            <p class="desc">Periksa kembali detail donasi Anda</p>
-          </header>
-
-          <div class="hasil-wrapper">
-            <h4 class="title">❤️ Ringkasan Donasi</h4>
-            <p>Program: <span id="hasil-program"></span></p>
-            <p>Jumlah Donasi: <span id="hasil-jumlah-donasi"></span></p>
-            <hr>
-            <h5>Data Donatur:</h5>
-            <p>Nama Lengkap: <span id="hasil-nama-lengkap"></span></p>
-            <p>Email: <span id="hasil-email"></span></p>
-            <p>No Telepon: <span id="hasil-no-telepon"></span></p>
-            <p>Pesan: <span id="hasil-pesan"></span></p>
-            <hr>
-            <p>Metode Pembayaran: <span id="hasil-metode-pembayaran"></span></p>
-          </div>
-          <button class="cta" type="submit">❤️ Konfirmasi Donasi</button>
-          <span class="text-end">Dengan mengklik konfirmasi, Anda menyetujui syarat dan ketentuan yang berlaku</span>
-        </div>
+        <button class="cta" type="submit">❤️ Konfirmasi Donasi</button>
+        <span class="text-end">Dengan mengklik konfirmasi, Anda menyetujui syarat dan ketentuan yang berlaku</span>
       </div>
+    </div>
+  </form>
 
-    </form>
+  <script src="js/page-1.js"></script>
+  <script src="js/page-2.js"></script>
+  <script src="js/page-3.js"></script>
+  <script src="js/page-4.js"></script>
+</body>
 
-    <script src="js/page-1.js"></script>
-    <script src="js/page-2.js"></script>
-    <script src="js/page-3.js"></script>
-    <script src="js/page-4.js"></script>
-  </body>
 </html>

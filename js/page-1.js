@@ -97,21 +97,25 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('#jumlah-50').addEventListener('click', () => {
     document.querySelector('#jumlah-donasi').value = 'Rp. 50.000';
     document.querySelector('#hasil-jumlah-donasi').innerText = 'Rp. 50.000';
+    document.querySelector('#jumlah-donasi-page-1').innerText = 'Rp. 50.000';
     checkInputValidity()
   })
   document.querySelector('#jumlah-100').addEventListener('click', () => {
     document.querySelector('#jumlah-donasi').value = 'Rp. 100.000';
     document.querySelector('#hasil-jumlah-donasi').innerText = 'Rp. 100.000';
+    document.querySelector('#jumlah-donasi-page-1').innerText = 'Rp. 100.000';
     checkInputValidity()
   })
   document.querySelector('#jumlah-250').addEventListener('click', () => {
     document.querySelector('#jumlah-donasi').value = 'Rp. 250.000';
     document.querySelector('#hasil-jumlah-donasi').innerText = 'Rp. 250.000';
+    document.querySelector('#jumlah-donasi-page-1').innerText = 'Rp. 250.000';
     checkInputValidity()
   })
   document.querySelector('#jumlah-500').addEventListener('click', () => {
     document.querySelector('#jumlah-donasi').value = 'Rp. 500.000';
     document.querySelector('#hasil-jumlah-donasi').innerText = 'Rp. 500.000';
+    document.querySelector('#jumlah-donasi-page-1').innerText = 'Rp. 500.000';
     checkInputValidity()
   })
 
